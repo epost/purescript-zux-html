@@ -3,8 +3,7 @@ module Pux.Html.Attributes where
 import Prelude
 import Data.Tuple
 import Data.Foldable (foldMap)
-
-type Attribute a = String
+import Pux.Html (Attribute)
 
 className :: forall a. String -> Attribute a
 className c = "class='" <> c <> "'"

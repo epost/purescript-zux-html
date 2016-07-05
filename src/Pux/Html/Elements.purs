@@ -7,7 +7,6 @@ module Pux.Html.Elements (
 import Prelude ((<>), class Semigroup)
 import Data.Monoid
 import Data.Foldable (intercalate, foldMap)
-import Pux.Html.Attributes (Attribute)
 
 --------------------------------------------------------------------------------
 
@@ -21,6 +20,10 @@ instance semigroupHtml :: Semigroup (Html a) where
 
 instance monoidHtml :: Monoid (Html a) where
   mempty = Html ""
+
+--------------------------------------------------------------------------------
+
+type Attribute a = String
 
 --------------------------------------------------------------------------------
 
