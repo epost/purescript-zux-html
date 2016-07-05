@@ -1,4 +1,4 @@
-module Zux.Html.Attributes where
+module Pux.Html.Attributes where
 
 import Prelude
 import Data.Tuple

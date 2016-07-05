@@ -1,4 +1,4 @@
-module Zux.Html.Elements (
+module Pux.Html.Elements (
   Html,
   unHtml,
   text, span, a, ul, li, table, tr, td, div, p, h1, h3
@@ -7,7 +7,7 @@ module Zux.Html.Elements (
 import Prelude ((<>), class Semigroup)
 import Data.Monoid
 import Data.Foldable (intercalate, foldMap)
-import Zux.Html.Attributes (Attribute)
+import Pux.Html.Attributes (Attribute)
 
 --------------------------------------------------------------------------------
 
