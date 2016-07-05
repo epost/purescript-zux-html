@@ -1,0 +1,22 @@
+{
+  "name": "purescript-zux-html",
+  "authors": [
+    "Erik Post <erik@shinsetsu.nl>"
+  ],
+  "description": "HTML DSL with the same signatures as Pux.",
+  "main": "",
+  "keywords": [
+    "html",
+    "dsl",
+    "purescript"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
