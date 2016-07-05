@@ -50,6 +50,12 @@ td = mkTag "td"
 div :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
 div = mkTag "div"
 
+p :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
+p = mkTag "p"
+
+h1 :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
+h1 = mkTag "h1"
+
 mkTag :: forall a. String -> Array (Attribute a) -> Array (Html a) -> Html a
 mkTag tagName attrs kids = Html (openTag <> content <> closeTag)
   where
