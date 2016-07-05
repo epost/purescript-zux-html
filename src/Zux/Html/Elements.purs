@@ -1,7 +1,7 @@
 module Zux.Html.Elements (
   Html,
   unHtml,
-  text, span, ul, li, table, tr, td, div
+  text, span, ul, li, table, tr, td, div, p, h1
   ) where
 
 import Prelude ((<>), class Semigroup)
