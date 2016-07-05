@@ -1,6 +1,7 @@
 module Pux.Html.Elements (
   Html,
   unHtml,
+  Attribute,
   element, text, span, a, ul, li, table, tr, td, div, p, h1, h3
   ) where
 
