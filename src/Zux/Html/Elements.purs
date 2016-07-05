@@ -30,6 +30,9 @@ text str = Html str
 span :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
 span = element "span"
 
+a :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
+a = element "a"
+
 -- | Example application: `ul [] [li [] [text "hoi", text "poes"], li [] [text "dag", text "hond"]]`.
 ul :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
 ul = element "ul"
