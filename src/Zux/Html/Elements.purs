@@ -28,39 +28,39 @@ text :: forall a. String -> Html a
 text str = Html str
 
 span :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-span = mkTag "span"
+span = element "span"
 
 -- | Example application: `ul [] [li [] [text "hoi", text "poes"], li [] [text "dag", text "hond"]]`.
 ul :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-ul = mkTag "ul"
+ul = element "ul"
 
 -- | Example application: `li [] [text "hoi"]`.
 li :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-li = mkTag "li"
+li = element "li"
 
 table :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-table = mkTag "table"
+table = element "table"
 
 tr :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-tr = mkTag "tr"
+tr = element "tr"
 
 td :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-td = mkTag "td"
+td = element "td"
 
 div :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-div = mkTag "div"
+div = element "div"
 
 p :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-p = mkTag "p"
+p = element "p"
 
 h1 :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-h1 = mkTag "h1"
+h1 = element "h1"
 
 h3 :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
-h3 = mkTag "h3"
+h3 = element "h3"
 
-mkTag :: forall a. String -> Array (Attribute a) -> Array (Html a) -> Html a
-mkTag tagName attrs kids = Html (openTag <> content <> closeTag)
+element :: forall a. String -> Array (Attribute a) -> Array (Html a) -> Html a
+element tagName attrs kids = Html (openTag <> content <> closeTag)
   where
     openTag  = "<" <> tagName <> " " <> attrs' <> ">"
     content  = foldMap unHtml kids
