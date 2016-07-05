@@ -1,7 +1,7 @@
 module Pux.Html.Elements (
   Html,
   unHtml,
-  text, span, a, ul, li, table, tr, td, div, p, h1, h3
+  element, text, span, a, ul, li, table, tr, td, div, p, h1, h3
   ) where
 
 import Prelude ((<>), class Semigroup)
