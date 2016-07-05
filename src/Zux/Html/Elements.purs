@@ -1,5 +1,6 @@
 module Zux.Html.Elements (
   Html,
+  unHtml,
   text, span, ul, li, table, tr, td, div
   ) where
 
