@@ -1,7 +1,7 @@
 module Zux.Html.Elements (
   Html,
   unHtml,
-  text, span, ul, li, table, tr, td, div, p, h1
+  text, span, ul, li, table, tr, td, div, p, h1, h3
   ) where
 
 import Prelude ((<>), class Semigroup)
@@ -55,6 +55,9 @@ p = mkTag "p"
 
 h1 :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
 h1 = mkTag "h1"
+
+h3 :: forall a. Array (Attribute a) -> Array (Html a) -> Html a
+h3 = mkTag "h3"
 
 mkTag :: forall a. String -> Array (Attribute a) -> Array (Html a) -> Html a
 mkTag tagName attrs kids = Html (openTag <> content <> closeTag)
